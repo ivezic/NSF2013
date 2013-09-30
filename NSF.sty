@@ -1,0 +1,137 @@
+%\usepackage{amssymb,apjfonts}
+\usepackage{amssym}
+
+\textwidth=6in
+\textheight=8.4in
+\topmargin=-0.75in
+\headheight=.15in
+\headsep=.35in
+\oddsidemargin=0.25in
+\evensidemargin=0.25in
+\parindent=2em
+\parskip=0.5ex
+
+\tolerance=600      % 3x "normal" value; cuts down on overfull complaints
+
+ \def\section{\@startsection{section}{1}{\z@}
+    {2.3ex plus 1ex minus .2ex}{1.5ex plus .2ex}{\centering\large\sf}}%\large\bf}}
+ \def\subsection{\@startsection{subsection}{2}{\z@}
+    {2ex plus 1ex minus .2ex}{1ex plus .2ex}{\centering\normalsize\bf}}
+ \def\subsubsection{\@startsection{subsubsection}{3}{\z@}
+    {2ex plus 1ex minus .2ex}{1ex plus .2ex}{\centering\normalsize\sf}}
+
+\def\thesection{\@arabic{\c@section}}
+\def\thesubsection{\thesection.\@arabic{\c@subsection}}
+%\def\thesubsubsection{\thesubsection.\@arabic{\c@subsubsection}}
+\def\thesubsubsection{(\@alph{\c@subsubsection})}
+\def\theparagraph{\thesubsubsection.\@arabic{\c@paragraph}}
+
+\def\Segment[#1]#2\par {\newpage \setcounter{page}{1} \setcounter{section}{0}
+    \renewcommand{\thepage}{\sf #1--\arabic{page}}
+    \centerline{\Large \sf #1. #2}
+    \centerline{\vrule height0.8pt width\hsize}\bigskip}
+
+\def\references{%\section{REFERENCES}
+    \bgroup\parindent=\z@ \parskip=\itemsep
+    \def\refpar{\par\hangindent=3em\hangafter=1}}
+\def\endreferences{\refpar\egroup}
+\def\Ref{\refpar}
+
+%% Journal symbols from AASTeX
+\let\jnl@style=\rmfamily 
+\def\ref@jnl#1{{\jnl@style#1}}% 
+\newcommand\aj{\ref@jnl{AJ}}% 
+          % Astronomical Journal 
+\newcommand\araa{\ref@jnl{ARA\&A}}% 
+          % Annual Review of Astron and Astrophys 
+\newcommand\apj{\ref@jnl{ApJ}}% 
+          % Astrophysical Journal 
+\newcommand\apjl{\ref@jnl{ApJ}}% 
+          % Astrophysical Journal, Letters 
+\newcommand\apjs{\ref@jnl{ApJS}}% 
+          % Astrophysical Journal, Supplement 
+\newcommand\ao{\ref@jnl{Appl.~Opt.}}% 
+          % Applied Optics 
+\newcommand\apss{\ref@jnl{Ap\&SS}}% 
+          % Astrophysics and Space Science 
+\newcommand\aap{\ref@jnl{A\&A}}% 
+          % Astronomy and Astrophysics 
+\newcommand\aapr{\ref@jnl{A\&A~Rev.}}% 
+          % Astronomy and Astrophysics Reviews 
+\newcommand\aaps{\ref@jnl{A\&AS}}% 
+          % Astronomy and Astrophysics, Supplement 
+\newcommand\azh{\ref@jnl{AZh}}% 
+          % Astronomicheskii Zhurnal 
+\newcommand\baas{\ref@jnl{BAAS}}% 
+          % Bulletin of the AAS 
+\newcommand\jrasc{\ref@jnl{JRASC}}% 
+          % Journal of the RAS of Canada 
+\newcommand\memras{\ref@jnl{MmRAS}}% 
+          % Memoirs of the RAS 
+\newcommand\mnras{\ref@jnl{MNRAS}}% 
+          % Monthly Notices of the RAS 
+\newcommand\pra{\ref@jnl{Phys.~Rev.~A}}% 
+          % Physical Review A: General Physics 
+\newcommand\prb{\ref@jnl{Phys.~Rev.~B}}% 
+          % Physical Review B: Solid State 
+\newcommand\prc{\ref@jnl{Phys.~Rev.~C}}% 
+          % Physical Review C 
+\newcommand\prd{\ref@jnl{Phys.~Rev.~D}}% 
+          % Physical Review D 
+\newcommand\pre{\ref@jnl{Phys.~Rev.~E}}% 
+          % Physical Review E 
+\newcommand\prl{\ref@jnl{Phys.~Rev.~Lett.}}% 
+          % Physical Review Letters 
+\newcommand\pasp{\ref@jnl{PASP}}% 
+          % Publications of the ASP 
+\newcommand\pasj{\ref@jnl{PASJ}}% 
+          % Publications of the ASJ 
+\newcommand\qjras{\ref@jnl{QJRAS}}% 
+          % Quarterly Journal of the RAS 
+\newcommand\skytel{\ref@jnl{S\&T}}% 
+          % Sky and Telescope 
+\newcommand\solphys{\ref@jnl{Sol.~Phys.}}% 
+          % Solar Physics 
+\newcommand\sovast{\ref@jnl{Soviet~Ast.}}% 
+          % Soviet Astronomy 
+\newcommand\ssr{\ref@jnl{Space~Sci.~Rev.}}% 
+          % Space Science Reviews 
+\newcommand\zap{\ref@jnl{ZAp}}% 
+          % Zeitschrift fuer Astrophysik 
+\newcommand\nat{\ref@jnl{Nature}}% 
+          % Nature 
+\newcommand\iaucirc{\ref@jnl{IAU~Circ.}}% 
+          % IAU Cirulars 
+\newcommand\aplett{\ref@jnl{Astrophys.~Lett.}}% 
+          % Astrophysics Letters 
+\newcommand\apspr{\ref@jnl{Astrophys.~Space~Phys.~Res.}}% 
+          % Astrophysics Space Physics Research 
+\newcommand\bain{\ref@jnl{Bull.~Astron.~Inst.~Netherlands}}% 
+          % Bulletin Astronomical Institute of the Netherlands 
+\newcommand\fcp{\ref@jnl{Fund.~Cosmic~Phys.}}% 
+          % Fundamental Cosmic Physics 
+\newcommand\gca{\ref@jnl{Geochim.~Cosmochim.~Acta}}% 
+          % Geochimica Cosmochimica Acta 
+\newcommand\grl{\ref@jnl{Geophys.~Res.~Lett.}}% 
+          % Geophysics Research Letters 
+\newcommand\jcp{\ref@jnl{J.~Chem.~Phys.}}% 
+          % Journal of Chemical Physics 
+\newcommand\jgr{\ref@jnl{J.~Geophys.~Res.}}% 
+          % Journal of Geophysics Research 
+\newcommand\jqsrt{\ref@jnl{J.~Quant.~Spec.~Radiat.~Transf.}}% 
+          % Journal of Quantitiative Spectroscopy and Radiative Trasfer 
+\newcommand\memsai{\ref@jnl{Mem.~Soc.~Astron.~Italiana}}% 
+          % Mem. Societa Astronomica Italiana 
+\newcommand\nphysa{\ref@jnl{Nucl.~Phys.~A}}% 
+          % Nuclear Physics A 
+\newcommand\physrep{\ref@jnl{Phys.~Rep.}}% 
+          % Physics Reports 
+\newcommand\physscr{\ref@jnl{Phys.~Scr}}% 
+          % Physica Scripta 
+\newcommand\planss{\ref@jnl{Planet.~Space~Sci.}}% 
+          % Planetary Space Science 
+\newcommand\procspie{\ref@jnl{Proc.~SPIE}}% 
+          % Proceedings of the SPIE 
+\let\astap=\aap 
+\let\apjlett=\apjl 
+\let\apjsupp=\apjs 

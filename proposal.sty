@@ -1,0 +1,41 @@
+\usepackage{NSF}
+%\usepackage{NSF,graphicx}
+
+%From the two column AASTeX4 style with some adjustments:
+
+%\makeatletter
+\textwidth=6.7in%6.9in
+\textheight=9in%8.4in
+\oddsidemargin=0in
+\evensidemargin=0in
+\parskip=0pt
+\parindent=1.2em
+\columnsep=0.3in
+
+\hoffset=-0.1in%-0.2in     % To compensate for wide \textwidth
+
+\def\Topic{\bigskip \noindent}
+\def\project{$\bullet$}
+
+\def\section{\@startsection{section}{1}{\z@}
+    {-2.3ex plus 1ex minus .2ex}{1.5ex plus .2ex}{\normalsize\sf}}%{\large\sf}}
+\def\subsection{\@startsection{subsection}{2}{\z@}
+    {-2ex plus 1ex minus .2ex}{1ex plus .2ex}{\normalsize\bf}}
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}
+    {-2ex plus 1ex minus .2ex}{1ex plus .2ex}{\normalsize\sf}}%{\normalsize\it}}
+
+\def\cap#1{\caption{\small #1}}
+\def\FigNum{\addtocounter{figure}{1} Figure \thefigure:\ }
+\def\NextFig#1{\addtocounter{figure}{1} \edef#1{\thefigure}}
+
+%\def\Figure#1#2{\centering \leavevmode
+%            \ifpdf \includegraphics[width=#2,clip]{#1.png}
+%            \else  \includegraphics[width=#2,clip]{#1.ps} \fi}
+\def\Figure#1#2[#3] {\centering \leavevmode
+            \ifpdf \includegraphics[width=#3]{#1.#2}
+            \else  \includegraphics[width=#3,clip]{#1.ps} \fi}
+
+\newif\ifpdf
+\twocolumn
+
+%\makeatother
