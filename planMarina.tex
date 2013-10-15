@@ -1,3 +1,182 @@
-\subsection{Teaching Program}
+ 
+\comment{
+\section{Intro/Motivation/What we want}
 
-What will we do...
+\subsection{The current ACMS program}
+
+the courses
+
+next steps: vision of ACMS 
+
+next steps: other math majors?, new certificates, programs
+
+MMP -find out about minors
+
+will also help students in hard/soft sciences 
+
+other activities (training)
+
+\section{University involvement}
+
+UW context: e-sci, igert, phd tracks in stat, cse,..., 
+stat context: increased interest in stats/data sci Statistics is recognized (by students themselves) at the forefront of the data science revolution. Phd track, MS track.
+
+Astro involvement
+
+How does UW support this plan:
+
+
+\section{PI involvement and experience}
+
+\subsection{Postdoc involvement}
+
+\subsection{Grad students involvement}
+
+\subsection{Undergraduate involvement}
+
+\section{Evaluation}
+and expected impact
+
+\section{Timeline}
+
+}%end comment
+
+\section{Description of the courses}
+\label{sec:course-descr}
+
+\bit
+\item STAT 391 ``Probability and Statistics for Computer Science''
+``Computational Statistical Modeling and Machine Learning''
+\item ASTRO 497 ``Data Intensive Astronomy'' 
+\eit 
+These courses aims are explicitly to (1) to give students a hands on experience, through programming, and performing real data analyses on a computer, with the computational aspects of 
+statistical modeling in general, and (2) to introduce them to the  machine learning methodology in particular, with specific attention to the issues of big data.
+
+The material covered will be partly overlapping with other courses
+(e.g. regression, probability models for discrete data) and partly new
+(e.g. classification, clustering). However, the treatment of the
+material will stress on the interaction of computational and
+statistical aspects in modeling and prediction with scientific and
+engineering data. In this sense, the overlap has not been avoided; so that
+the student can gain a new, computational perspective, on areas
+already studied from a more theoretical point of view. 
+
+
+\subsection{STAT 535 and ASTRO 397 Syllabi}
+
+\bit
+\item STAT 391 Draft Syllabus\\
+- a review of the concept of likelihood and Max Likelihood estimation (cases in which MLE has no closed form, gradient ascent/Newton estimation of MLE)\\
+- a review of basic probability models with focus on ML estimation of these models, supported heavily by simulation (e.g demonstrating gaussianity of MLE for certain models, and non-gaussianity for other models, including Zipf's law type distributions)\\
+- models for statistical prediction, with focus on classification\\
+- in less detail: intro and computational aspects of other statistical topics like density estimation, clustering, testing, model selection and validation\\
+- intro to programming in Python, and to Python libraries supporting scientific computing\\
+- examples real applications from engineering and sciences (image analysis, information retrieval, etc.)
+
+
+\item[]{\bf Learning goals for STAT 391} Ability to perform computationally intense/authomated and efficient data analysis. Ability to combine existing tools and libraries with programming in a general purpose language (python). 
+Working knowledge of the most important/main machine learning tools and methods, as well as their probabilistic interpretation. Understanding of the practical implications of theoretical results like independence, overfitting, consistency of an estimator. 
+
+\item ASTRO 487 Draft Syllabus\\
+Computational Challenges in data-intensive astronomy and astrophysics:
+-data types and data management systems
+-types of computational problems and strategies for speeding them up 
+- data visualization challenges
+- selection effects and truncated/censored data in astronomical context 
+
+Exploratory techniques and searching for structure (e.g non-parametric density estimation, finding clusters - focus on non-parametrics and large data)
+
+Dimensionality reduction\\
+- review of principal component analysis in a large data context
+- non-negative matrix factorization 
+- independent component analysis and projection pursuit 
+
+Regression and model fitting for large data
+\comment{ (non-linear and kernel regression, methods for handling heteroscedastic and non-Gaussian errors, Gaussian processes)}
+
+Basics of time series analysis
+\comment{
+6) Time series analysis in astronomy
+- main concepts and tools for time series analysis
+- analysis of periodic time series 
+- temporally localized signals
+- analysis of stochastic processes}
+
+- applications using real data from large sky surveys
+
+Adoption and development of cross-disciplinary tools (e.g. numerical 
+algorithms, visualization methods, data-human interaction) in the context
+of big data, astronomical or otherwise \mmp{fill in exaamples, why these...}
+\eit
+
+{\bf Learning goals for ASTRO 597}
+
+
+
+\subsection{Format and student experience}
+
+The courses will consist of lectures, homework assignments, 1--2
+miniprojects, and a final exam. The TA will hold recitations; about
+half of these will be in a (virtual) computer lab environment. 
+
+{\bf The Computer Lab recitations} will offer support for learning Python, as well as specific data analysis tools \mmp{examples: libraries, tools, from the book}   The student will practice working in groups, the technique of extreme programming, using a debugger.
+
+Another experience in the computer lab will be actual data analysis and visualization using the tools. 
+
+\mmp{the postdoc will train/supervise the TA's for both courses}
+
+{\bf Homework assignments} There will be 4-5 weekly homework assignments. They will contain concept problems, algorithms problems, programming assignments, and data analysis assignments.
+
+
+\mmp{{\bf TODO:} credits for each course\\
+ put in some pictures (from 391..)\\
+ sample student evaluations\\
+ why python\\
+what support we have for python\\
+why astronomy good testbed
+}
+
+A note on the overlap between STAT 391 and ASTRO 497: Where the two
+courses have overlapping topics, ASTRO will consider the big data case
+explicitly, while STAT 391 will be considering the connections between
+statistical theory and computation. STAT 391 will support more basic
+Python, while ASTRO 597 will support Python libraries for big data.
+
+{\bf Lectures} We will blend in computer demos, class question and answer, and group discussion with the standard lecture format. 
+
+{\bf Textbooks} \mmp{TBW}
+
+
+
+
+\subsection{Precursors (and about the PI's-- here or later?)}
+\label{sec:precursors}
+
+A previous version of {\bf STAT 391} was developed and taught by \meila for 11 years as ``Probability and Statistics for Computer Science''.
+
+Recently, (i.e. 2010) CSE introduced their own introduction to probability and statistics, CSE 312.  While STAT 391 continues to be taught and recommended as an elective, it was clear that the course could not remain in its original form.
+Therefore, in Spring 2013, the PI \meila with Hoyt Koepke, revised the course, having in mind that
+\bit
+\item the audience was now literate in statistics and probability
+\item the course could now be opened to a larger audience 
+\eit
+I opted to replace the introductory material with more advanced topics, and for these I chose a set of basic machine learning topics. I also introduced more substantial data analysis assignments. These changes were implemented by Hoyt Kopke, who taught the class. The course web page is at {\tt }. The student feedback to this pilot experiment was very encouraging. \mmp{specifics: how many students, what depts, they liked being made to learn python, loved the projects too, level was demanding}
+
+\meila with Connoly co-taught an extremely well received course at CMU in 1999-200. \mmp{fill in 1-2 more sentences}
+
+{\bf ASTRO 497} \mmp{A,Z say something} 
+
+\subsection{Short term: how/where will these classes fit}
+\mmp{some of this needs revision}
+\bit
+\item These courses fit very well with the original goal and mission of the  ACMS program. The revision we propose will take it to a level corresponding to the current state
+\item Crosscultural diversity: ACMS students will share the class with CS majors (STAT 391) or Astronomy and Physics majors
+\item General increased interest from employers in computational statistics, big data, machine learning, together or separately. We expect that ACMS students, too, will be well served by these courses.
+
+\item[]{\bf Links}
+\item STAT 391 Spring 2013 web site {\tt http://www.stat.washington.edu/courses/stat391/spring13/}
+\item AstroML Textbook web site {\tt http://www.amazon.com/Data-Mining-Machine-Learning-Astronomy/dp/0691151695}
+\eit
+
+
+

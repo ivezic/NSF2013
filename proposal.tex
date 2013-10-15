@@ -5,6 +5,7 @@
 \usepackage{rotating}
 \voffset +0.2 true in
 
+\usepackage{color} % added by MMP
 
 % latex proposal; dvips -Ppdf -o proposal.ps proposal.dvi; ps2pdf14 proposal.ps proposal.pdf
 % or run make (see Makefile) 
@@ -18,6 +19,24 @@
 \newcommand\x         {\hbox{$\times$}}
 \hyphenation{para-met-ri-zed Qua-sars}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands added by MMP 
+
+\newcommand{\comment}[1]{}
+\newcommand{\mmp}[1]{\textcolor{red}{#1}}
+
+\newcommand{\meila}{Meil\u{a}}
+
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+\newcommand{\bits}{\begin{itemize*}}
+\newcommand{\eits}{\end{itemize*}}
+\newcommand{\benum}{\begin{enumerate}}
+\newcommand{\eenum}{\end{enumerate}}
+\newcommand{\benums}{\begin{enumerate*}}
+\newcommand{\eenums}{\end{enumerate*}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
