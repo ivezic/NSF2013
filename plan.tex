@@ -2,18 +2,12 @@
 What will we do...
 
 
-
-
-
-\subsection{ASTR 490} 
-
-Was it 490? Andy remembers...
-
+\subsection{ASTR 598} 
 
 Copied text from that email, which was copied from our book, to see
 how many pages it would take...
 
-\subsubsection{Motivation for Astr 490}
+\subsubsection{Motivation for Astr 598}
 
 Astronomy and astrophysics are witnessing dramatic increases in data volume 
 as detectors, telescopes, and computers become ever more powerful. During the 
@@ -102,12 +96,25 @@ The course outline:
 \end{enumerate} 
 
 
-We will textbook {\it ``Statistics, Data Mining, and Machine Learning in Astronomy:
+We will use textbook {\it ``Statistics, Data Mining, and Machine Learning in Astronomy:
 A Practical Python Guide for the Analysis of Survey Data''} (Princeton Series in Modern 
-Observational Astronomy) coauthored by Co-PIs on this prooposal. 
+Observational Astronomy, in press) coauthored by the Co-PIs on this prooposal. 
+
 
 
 \subsection{Python Packages} 
+
+
+\begin{figure*}[!t]
+\vskip -1.8in
+\includegraphics[width=1.02\hsize,clip]{astroML.eps}
+\vskip -2.0in
+\caption{We will leverage all the modern python tools available in {\it astroML} and
+other packages, including a large number of practical data-intensive exercises developed to
+support textbook that will be used with the proposed ASTR 598 course.} 
+\label{Fig:astroML}
+\end{figure*}
+
 
 We will leverage all the publicly available modern python tools. In particular, seminar work will be 
 built around the {\it astroML} package (available from http://www.astroml.org) that was developed 
@@ -117,29 +124,40 @@ and distributed under the 3-clause BSD license. It contains a growing library of
 learning routines for analyzing astronomical data in python, loaders for several open astronomical datasets, 
 and a large suite of examples of analyzing and visualizing astronomical datasets (there are close to two 
 hundred examples of machine learning and visualization in the code library that supports the textbook 
-alone).
+alone). In addition to  {\it astroML} package, we will expose students to several other popular and widely
+used toolkits (e.g. PyMC for Markov chain Monte Carlo methods, and HealPy for spherical coordinates 
+and spherical harmonic transformations). 
 
-In addition to  {\it astroML} package, we will expose students to several other popular and widely
-used toolkits: 
-
-
-
-
-
-
-
+As an example of methods and exercises available in  {\it astroML}, we single out methods 
+for reducing data dimensionality. Many astronomical analyses must address the question of the 
+complexity as well as size of the data set. Dimensionality reduction methods address the
+complexity issue  by finding the directions within a multivariate data set that contain most 
+of the information. Classical approaches for identifying the principal dimensions include
+principal component analysis (PCA), independent component analysis (ICA), and non-negative 
+matrix factorization (NMF). These methods are implemented in   {\it astroML}, with a user-friendly 
+interface and adequate documentation (see Figure~\ref{Fig:astroML}). Furthermore, {\it astroML} also 
+includes easy-to-use code to automatically access and download spectra collected by the Sloan Digital 
+Sky Survey (currently a ``gold standard'' for modern astronomical surveys and big data sets; see sdss.org). 
+Therefore, an undergraduate student will not only be exposed to modern statistical methods
+and a cutting-edge astronomical data set, but will be empowered to actually apply these methods 
+to a real complex and massive data set.  The result of this exercise is shown in Figure~\ref{Fig:astroML2}. 
+With such a positive experience, it is very likely that such a student would not have difficulties applying 
+the same methods and tools later to potentially unrelated problems.  
 
 
 \begin{figure*}[!t]
-\vskip -5.5in
-\includegraphics[width=1.02\hsize,clip]{astroML.eps}
+\vskip -1.8in
+\includegraphics[width=1.02\hsize,clip]{astroML2.eps}
 \vskip -2.0in
-\caption{We will leverage all the modern python tools available in {\it astroML} and
-other packages.} 
-\label{Fig:astroML}
+\caption{An example of sophisticated tools available in {\it astroML} and exercises that will be
+used in practical seminar work. The figure shows a comparison of the decomposition of SDSS 
+spectra using PCA (left panel), ICA (middle panel) and NMF (right panel). The rank of the component
+increases from top to bottom. For the ICA and PCA the first component is the mean spectrum (NMF 
+does not require mean subtraction). All of these techniques isolate a common set of spectral features 
+(identifying features associated with the continuum and line emission). The ordering of the spectral 
+components is technique dependent.} 
+\label{Fig:astroML2}
 \end{figure*}
-
-
 
 
 \subsection{Workshop} 
