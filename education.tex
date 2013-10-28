@@ -82,14 +82,14 @@ There are several motivating factors:
   are being shifted from humans to computers, statistics is called
   upon to design and validate the procedures used to take these
   decisions. Thus, the statician's importance in a much wider range of
-  human activities, be they science or buisness. But the
-  statistician's responsibility is commensurately growing, as she needs
+  human activities, be they science or business. But the
+  statistician's responsibility is commensurately growing, as (s)he needs
   to master the skills required by cyber-enabled science and data
   analysis.
-\item These skills include are not limited to using computers and
+\item These skills are not limited to using computers and
   programming. The nature of statistical analyses itself is
   affected \mmp{get some citations} as it has been long
-  recognized. Computationally aware statistical methods need to be
+  recognized. Computationally heavy statistical methods need to be
   designed. Very large samples will support models of a complexity
   that could not be considered in real-life scenarios a decade or two
   ago. It is now not possible to perform model selection by explicitly
@@ -100,26 +100,29 @@ There are several motivating factors:
   almost universal necessity. Devising new methods to evaluate complex
   models in an environment that is not stationary, nor controlled are
   some of the challenges of modern data analysis.
-\item The proposal fits in and leverages other efforts and successes at UW in creating a strong collaborative environment for \cdse~ (the e-science Institute, the IGERT for graduate education in Big Data and the related PhD tracks recently created in CSE and Statistics). The time is ripe to involve undergraduates, and specifically statistics and mathematics majors in this change.
+\item The proposal fits in and leverages other \cdse\ efforts and successes at UW in creating a strong collaborative environment for (the e-science Institute, the IGERT for graduate education in Big Data and the related PhD tracks recently created in CSE and Statistics). The time is ripe to involve undergraduates, and specifically statistics and mathematics majors in this change.
 \item This proposal is in the spirit of the ACMS original mission,
   bringing this part up to speed with the demands of the coming decade.
 \eit
-{\bf Plan}
 
-{\em Stage 1:} Design and introduce two new courses \statcl, \astrocl,
+{\bf Work Plan}
+
+For planning purposes, we divide the proposed project into three stages which
+roughly map to yearly schedule. 
+
+{\bf Stage 1:} Design and introduce two new courses \statcl, \astrocl,
 as {\em electives} in the track.  Start the Undergraduate \cdse~
 Research Seminar. This seminar will differ from the existing ``ACMS''
 Undergraduate Math Science Seminar ({\sc Math 498}), in that the
 speakers will be undergraduates themselves or their mentors, and the
-seminar topics will be thei projects (see Section
+seminar topics will be their projects (see Section
 \ref{sec:ugrad-seminar} for more details).
 
-{\em Stage 2:} Redesign the track: move \statcl, Stochastic Processes {\sc STAT 481, 482} into the core. As the track will no longer be regarded as a second major for science students, we will make room by removing the {\sc PHYS 121-2-3} courses (15 credits) from it.  Reorganizing the electives into two groups: group I (math/stat electives) and group II computing and science electives. Further reorganization of the core and electives in consultation with Statistics faculty and the other ACMS participating departments and Schools. For example, we will consider adding one or both of {\sc AMATH 482, 483} ``Data analysis'', ``High performance scientific computing''.
+{\bf Stage 2:} Redesign the track: move \statcl, Stochastic Processes {\sc STAT 481, 482} into the core. As the track will no longer be regarded as a second major for science students, we will make room by removing the {\sc PHYS 121-2-3} courses (15 credits) from it.  Reorganizing the electives into two groups: math/stat electives (group I) and computing and science electives (group II). Further reorganization of the core and electives in consultation with Statistics faculty and the other ACMS participating departments and Schools. For example, we will consider adding one or both of {\sc AMATH 482, 483} ``Data analysis'', ``High performance scientific computing''.
 
-Workshop for UW faculty sharing our experiences and teaching infrastructure.
+Organization of a workshop for UW faculty to share our experiences and teaching infrastructure.
 
-{\em Stage 3:} Incorporate feedback from evaluators and all participants. Continue developing the courses' software and data infrastructure. 
-
+{\bf Stage 3:} Incorporate feedback from evaluators and all participants. Continue developing the courses' software and data infrastructure. 
 
 In addition to this plan, although we are at the moment not explicitly
 proposing this, we will investigate if the two new courses could be
@@ -127,26 +130,27 @@ made accessible to Mathematics majors as well. Mathematics Professor
 William Stein, creator and leader of the {\tt Sage} project, teaches a
 successful Python programming course in Mathematics, which could serve
 to build a pathway towards one or both of the two new courses, if a
-way to satisfy the Statistics prerequisite is also found.
+way to satisfy the Statistics prerequisites is also found.
 
 
-{\bf Why this particular approach} Currently, computer education is
+{\bf Why this particular approach?} Currently, computer education is
 assured primarily through two core courses, {\sc CSE 142, 143}
 \cite{cse142}. These set the foundations in the understanding of
 computer programming, but they are of a general nature, and are mainly
-focuses towards preparing future programmers. (These courses are the
+focused towards preparing future programmers  (these courses are the
 same courses that the approximately 500 CSE majors take). Thus, there
 is no room for data analysis applications in these courses.  There is
-also an programming in R course ({\sc STAT 302}, 2 credits) offered
-irregularly.
+also a programming in R course ({\sc STAT 302}, 2 credits) but it is 
+offered quite irregularly.
 
-However, for reasons we will expound later (\ref{sec:python}, we
+However, for reasons we will expound later (Section \ref{sec:Python}), we
 consider that Python is the more appropriate computer language for our
 goals. Thus, we will both introduce Python and will use it to teach
-statitical methodology.  As Python will be taught as a second
+statistical methodology.  As Python will be taught as a second
 programming language, and as it is similar enough to Java (taught in
-CSE 142), we expect the students to be assimilate it quickly under our
-guidance. In Spring 2013, a pilot course was taught (by H. Koepke,
+CSE 142), we expect the students to assimilate it quickly under our
+guidance (there are also numerous publicly available tutorials).
+In Spring 2013, a pilot course was taught (by H. Koepke,
 Statistics) that introduced Python and taught statistical modeling
 using the language, to an audience of around 40 CSE undergraduates
 (the vast majority of wich did {\em not} know Python). The students'
@@ -155,10 +159,10 @@ in our approach.
 
 The need for a dedicated scientific computing course was long
 recognized, hence the Scientific Computing track and courses developed
-by AMATH ({\sc 481} (project based, in Matlab) {\sc 482, 483}). Our
-proposed courses are not replicating, but adding a new dimension to
+by AMATH {\sc 481} (project based, in Matlab) {\sc 482}, and {\sc 483}. 
+Our proposed courses are not replicating, but adding a new dimension to
 the existing AMATH courses. The latter focus on the ``signal
-processing'' aspects of data analysis (e.g filtering) ({\sc AMATH
+processing'' aspects of data analysis (e.g filtering, {\sc AMATH
   482}) and on the ``hardware, software, and programming for
 large-scale scientific computing'' ({\sc AMATH 483}), while our
 courses focus on the statistical modeling and statistical decision
@@ -194,7 +198,7 @@ How does UW support this plan:
 ``Computational Statistical Modeling and Machine Learning'' (4 credits)
 \item \astrocl ``Data Intensive Astronomy'' (3 credits)
 \eits
-These courses' aims are explicitly to (1) to give students a hands on experience, through programming, and performing real data analyses on a computer, with the computational aspects of 
+These courses' aims are explicitly to (1) to give students a hands-on experience, through programming, and performing real data analyses on a computer, with the computational aspects of 
 statistical modeling in general, and (2) to introduce them to the  machine learning methodology in particular, with specific attention to the issues of big data.
 
 The material covered will be partly overlapping with other courses
@@ -202,8 +206,8 @@ The material covered will be partly overlapping with other courses
 (e.g. classification, clustering). However, the treatment of the
 material will stress on the interaction of computational and
 statistical aspects in modeling and prediction with scientific and
-engineering data. In this sense, the overlap has not been avoided; so that
-the student can gain a new, computational perspective, on areas
+engineering data. In this sense, the overlap has not been avoided on purpose
+so that the students can gain a new, computational, perspective on areas
 already studied from a more theoretical point of view. 
 
 {\bf Prerequisites} (for either course): an introductory programming
@@ -222,20 +226,21 @@ other juniors and seniors with a strong quantitative background.
   density estimation, clustering, model selection and validation
   (including regularization and  nonparametric modeling)\\
   - intro to programming in Python, and to Python libraries supporting scientific computing\\
-  - examples real applications from engineering and sciences (image
+  - examples of real applications from engineering and sciences (image
   analysis, information retrieval, etc.)
 
-\item[]{\bf Learning goals for \statcl} Ability to perform computationally intense/authomated and efficient data analysis. Ability to combine existing tools and libraries with programming in a general purpose language (python). 
+\item[]{\bf Learning goals for \statcl} Ability to perform computationally intensive, automated, robust and efficient data analysis. Ability to combine existing tools and libraries with programming in a general purpose language (Python). 
 Working knowledge of the most important/main machine learning tools and methods, as well as their probabilistic interpretation. Understanding of the practical implications of theoretical results like independence, overfitting, consistency of an estimator. 
 
 {\bf Textbooks} Unfortunately, there is no single textbook one can
 assign for this course. We will rely partly on \meila's previously
 developed course notes for {\it ``Probability and Statistics for
-  Computer Science''}, a computatonally minded introductory course,
-partly on new course notes to be developed by \meila specifically for
-this more advanced course, and partly on the textbook of \astrocl~
+  Computer Science''}, a computationally minded introductory course,
+partly on new course notes to be developed by \meila\ specifically for
+this more advanced course, and partly on the textbook of \astrocl, 
 which will provide among others the Python exercises. We are also
-considering \cite{} Daniela's machine learning book.
+considering a new machine learning book written for undergraduate
+students \cite{}. 
 
 \comment{
 \item{Motivation for \astrocl} \mmp{shorter,more to the point of grant}
@@ -277,44 +282,47 @@ extensive prior knowledge in statistics will be required.
 }
 
 \item \underline{\astrocl~ Draft Syllabus}\\
-Computational Challenges in data-intensive astronomy and astrophysics:
--data types and data management systems
--types of computational problems and strategies for speeding them up 
-- data visualization challenges
-- selection effects and truncated/censored data in astronomical context 
 
-Exploratory techniques and searching for structure (e.g non-parametric density estimation, finding clusters - focus on non-parametrics and large data)
+Computational Challenges in data-intensive astronomy and astrophysics: \\
+- data types and data management systems \\
+- types of computational problems and strategies for speeding them up \\
+- data visualization challenges \\
+- selection effects and truncated/censored data in astronomical context \\
+
+Exploratory techniques and searching for structure \\
+- non-parametric density estimation \\
+- cluster finding methods (focus on non-parametrics and large data) \\
 
 Dimensionality reduction\\
-- review of principal component analysis in a large data context
-- non-negative matrix factorization 
-- independent component analysis and projection pursuit 
+- review of principal component analysis in a large data context \\
+- non-negative matrix factorization  \\
+- independent component analysis and projection pursuit \\
 
-Regression and model fitting for large data
+Regression and model fitting for large data \\
+- applications using real data from large sky surveys \\
 
-Basics of time series analysis
-
-- applications using real data from large sky surveys
+Basics of time series analysis \\
+- applications using real data from large sky surveys \\
 
 Adoption and development of cross-disciplinary tools (e.g. numerical 
 algorithms, visualization methods, data-human interaction) in the context
-of big data, astronomical or otherwise (see \ref{sec:python}).
+of big data, astronomical or otherwise (see Section \ref{sec:Python}).
 \eit
 
-{\bf Learning goals for \astrocl}
+{\bf Learning goals for \astrocl} \\
 - familiarity with drivers for and accomplishments of modern astronomical surveys\\
 - ability to perform computationally intense/automated and efficient data analysis\\
 - ability to combine existing tools and libraries with programming in a general purpose language (Python)\\
-- working knowledge of the most important/main machine learning tools and
-   methods, as well as their probabilistic interpretation// 
-- help to develop a diverse STEM workforce//
+- working knowledge of the most important/main machine learning tools and \\
+   methods, as well as their probabilistic interpretation \\
+- help to develop a diverse STEM workforce \\
  
 
 
 {\bf Textbook} {\it ``Statistics, Data Mining, and Machine Learning in
   Astronomy: A Practical Python Guide for the Analysis of Survey
-  Data''} (Princeton Series in Modern Observational Astronomy, in
-press) coauthored by the Co-PIs on this prooposal.
+  Data''} (Princeton Series in Modern Observational Astronomy),  
+coauthored by the Co-PIs on this proposal.
 
 {\bf Format and student experience} 
 The courses will consist of lectures, homework assignments, 1--2
@@ -322,8 +330,8 @@ miniprojects, and a final exam. The TA will hold quiz sections; about
 half of these will be in a (virtual) computer lab environment. 
 
 {\bf The Computer Lab recitations} will offer support for learning
-Python, as well as specific data analysis tools (see \ref{sec:python}).
-The student will practice programming in pairs (a.k.a extreme
+Python, as well as specific data analysis tools (see Section \ref{sec:Python}).
+The students will practice programming in pairs (a.k.a extreme
 programming), using debuggers, profilers, writing modifiable code, etc.
 
 Another experience in the computer lab will be actual data analysis
@@ -331,7 +339,7 @@ and visualization using the tools, the skills related to data
 visualisation, experimental data recording and reporting, etc.
 
 {\bf Homework assignments} There will be 4-5 homework
-assignments. They will contain concept problems, algorithms problems,
+assignments. They will contain concept problems, algorithmic problems,
 programming assignments, and data analysis assignments.
 
 A note on the overlap between \statcl~ and \astrocl: Where the two
@@ -342,25 +350,25 @@ Python, while \astrocl~ will support Python libraries for big data.
 
 
 \subsection{Python Packages} 
-\label{sec:python}
+\label{sec:Python}
 
 \begin{figure*}[!t]
 \vskip -1.8in
 \includegraphics[width=1.02\hsize,clip]{astroML.eps}
 \vskip -2.0in
-\caption{We will leverage all the modern python tools available in {\it astroML} and
+\caption{We will leverage all the modern Python tools available in {\it astroML} and
 other packages, including a large number of practical data-intensive exercises developed to
 support textbook that will be used with the proposed \astrocl~ course.} 
 \label{Fig:astroML}
 \end{figure*}
 
 
-We will leverage all the publicly available modern python tools. In particular, seminar work will be 
+We will leverage all the publicly available modern Python tools. In particular, seminar work will be 
 built around the {\it astroML} package (available from http://www.astroml.org) that was developed 
-to support textbook to be used with the proposed \astrocl course. {\it astroML} is a python module 
+by Co-PIs to support the textbook to be used with the proposed \astrocl course. {\it astroML} is a Python module 
 for machine learning and data mining built on {\it numpy}, {\it scipy}, {\it scikit-learn}, and {\it matplotlib}, 
 and distributed under the 3-clause BSD license. It contains a growing library of statistical and machine 
-learning routines for analyzing astronomical data in python, loaders for several open astronomical datasets, 
+learning routines for analyzing astronomical data in Python, loaders for several open astronomical datasets, 
 and a large suite of examples of analyzing and visualizing astronomical datasets (there are close to two 
 hundred examples of machine learning and visualization in the code library that supports the textbook 
 alone). In addition to  {\it astroML} package, we will expose students to several other popular and widely
@@ -380,8 +388,8 @@ Sky Survey (currently a ``gold standard'' for modern astronomical surveys and bi
 Therefore, an undergraduate student will not only be exposed to modern statistical methods
 and a cutting-edge astronomical data set, but will be empowered to actually apply these methods 
 to a real complex and massive data set.  The result of this exercise is shown in Figure~\ref{Fig:astroML2}. 
-With such a positive experience, it is very likely that such a student would not have difficulties applying 
-the same methods and tools later to potentially unrelated problems.  
+With such a positive experience, it is very likely that students would not have difficulties applying 
+the same methods and tools later to scientifically unrelated but mathematically similar problems.  
 
 
 \begin{figure*}[!t]
@@ -394,18 +402,20 @@ spectra using PCA (left panel), ICA (middle panel) and NMF (right panel). The ra
 increases from top to bottom. For the ICA and PCA the first component is the mean spectrum (NMF 
 does not require mean subtraction). All of these techniques isolate a common set of spectral features 
 (identifying features associated with the continuum and line emission). The ordering of the spectral 
-components is technique dependent.} 
+components is technique dependent. The SDSS spectroscopic database contains over a million
+such spectra.} 
 \label{Fig:astroML2}
 \end{figure*}
 
-\subsection{What we are building on}
+
+\subsection{What we are building on?}
 \label{sec:precursors}
 
 \meila~ has extensive previous experience teaching computational
 statistics courses at all levels. She developed the
 course ``Probability and Statistics for Computer Science'' an
-introductory course aimed at computer science majors, complete with exercises and demos in Matlab, revised the Statistical Computing graduate course sequence, later developed the Statistical Learning graduate sequence and lead, with E. Fox, the effort to introduce the Machine Learning/Big Data PhD track in the Statistics department. 
-
+introductory course aimed at computer science majors, complete with exercises and demos in Matlab, revised the Statistical Computing graduate course sequence, later developed the Statistical Learning graduate sequence and led, with prof. Emily Fox, 
+the effort to introduce the Machine Learning/Big Data PhD track in the Statistics department. 
 
 \comment{
  under the same
@@ -419,7 +429,7 @@ large, high-dimensional data sets \mmp{clean this up}}
 ZI, AC, JVdP
 
 
-\meila with Connoly co-taught an extremely well received course at CMU
+\meila\ and Connoly co-taught an extremely well received course at CMU
 in 1999-2000, ``Computational Statistics of Multi-Dimensional
 Scientific Databases'', which reunited students from Statistics,
 Computer Science and Astronomy, as well as faculty from these
@@ -427,12 +437,14 @@ departments.
 
 The Statistics department runs a {\em Virtual computer lab} that will
 be used by \statcl~ students in their quiz sessions and assignments.
-The clusters {\tt newton1,2}, consisting of 8, respectively 2 high
-memory nodes, accquired from a UW Student Technology Grant, will serve as
-basis for the graduate student research. \mmp{shall i buy more nodes??}
+%The clusters {\tt newton1,2}, consisting of 8, respectively 2 high memory nodes, 
+The high-memory computer clusters, 
+accquired from a UW Student Technology Grant, will serve as
+basis for the graduate student research. 
+% \mmp{shall i buy more nodes??}
 
-The \astroml~ book and web site will provide the starting point for the new courses' software and data infrastructure.
-
+The \astroml~ book and web site (see Section \ref{sec:Python}) will provide the starting 
+point for the new courses' software and data infrastructure.
 
 
 \comment{
@@ -445,7 +457,7 @@ course, having in mind that \bit
 \item the audience was now literate in statistics and probability
 \item the course could now be opened to a larger audience 
 \eit
-I opted to replace the introductory material with more advanced topics, and for these I chose a set of basic machine learning topics. I also introduced more substantial data analysis assignments. These changes were implemented by Hoyt Kopke, who taught the class. The course web page is at {\tt }. The student feedback to this pilot experiment was very encouraging. \mmp{specifics: how many students, what depts, they liked being made to learn python, loved the projects too, level was demanding}
+I opted to replace the introductory material with more advanced topics, and for these I chose a set of basic machine learning topics. I also introduced more substantial data analysis assignments. These changes were implemented by Hoyt Kopke, who taught the class. The course web page is at {\tt }. The student feedback to this pilot experiment was very encouraging. \mmp{specifics: how many students, what depts, they liked being made to learn Python, loved the projects too, level was demanding}
 }
 
 
