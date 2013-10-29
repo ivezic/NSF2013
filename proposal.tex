@@ -45,8 +45,7 @@
 \usepackage{hyperref}
 
 
-\title{Statistical Explorations of Data in the {ACMS} {Program} at the
-  {University} of {Washington}}
+\title{Statistical Explorations of Data in the {ACMS} {Program} at the {University} of {Washington}}
 \author{PI: Marina \meila, Co-PIs: Andrew Connolly, \v{Z}eljko Ivezi\'{c}, Jacob Vanderplas}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,9 +74,9 @@
 \newcommand{\meila}{Meil\u{a}}
 \newcommand{\cdse}{CDS\&E}
 
-\newcommand{\astroml}{{\em AstroML}}
-\newcommand{\astrocl}{{\sc ASTR 497}}
-\newcommand{\statcl}{{\sc STAT 391}}
+\newcommand{\astroml}{{\tt AstroML}}
+\newcommand{\astrocl}{{\sc Astr 497}}
+\newcommand{\statcl}{{\sc Stat 391}}
 
 \newcommand{\bit}{\begin{itemize}}
 \newcommand{\eit}{\end{itemize}}
@@ -95,14 +94,14 @@
 
 \begin{document}
 
-
-\maketitle
+% we don't need title - it's done automatically by Fastlane
+%\maketitle
 
 \input{introduction}  % the same
    
 \input{education}     % planMarina.tex, plan.tex
-\input{dissemination} % workshop only
 \input{research}      % nothing
+\input{dissemination} % workshop only
 \input{activities} % what everyone is doing, recruiting, evaluation
                    % Andy's stuff, some sections from planMarina.tex
 
@@ -124,6 +123,8 @@
 
 \input{organization} % not touched yet
 
+%% PROPOSAL TEXT MUST NOT EXCEED 15 PAGES - not including references! 
+\newpage 
 \bibliographystyle{plain}
 \bibliography{proposal}
 \end{document} 

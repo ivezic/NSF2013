@@ -1,35 +1,45 @@
 
-\section{    {\bf        PROJECT ORGANIZATION         }}
+\section{    {\bf        PROJECT ORGANIZATION AND MANAGEMENT         }}
 \label{plan}
 
 \subsection{                      Key Project Aims                   }
+\label{sec:key-aims}
  
-This project will  {\bf i)}  develop something, {\bf ii)} 
-apply these methods, and {\bf iii)}  synthesize and compare...
-
-These deliverables will have an impact on the community that is much broader 
-than the focus of this proposal. 
+This proposal aims to 
+\bits
+\item Transform the ACMS (Applied and Computational Math Sciences) Program Statistics track
+by developing two new courses and a research seminar. 
+\item Expose students to computationally intensive data analysis and mentor them in research projects. 
+\item Facilitate adopting of this program by other institutions.
+\eits  
+{\bf Long-term outcomes} For all participating students: 
+continued involvement with \cdse~ research, 
+declaration of newly developed computationally minded statistics major,
+intentions to pursue or progression along academic and/or career path within \cdse~ (e.g., graduate school application, internships, employment placement). 
+For UW curriculum: establishment of computationally minded statistics major,
+increased enrollment in newly developed major, inclusion of developed activities in other classes or curriculla.
 
 
 \subsection{Responsibilities and Schedule}
 
-The PI, Meila, will be responsible for the overall success of the project.
+The PI, Meila, will be responsible for the overall success of the project. She will also be 
+responsible for the course STAT 391, and for mentoring Statistics students. The Co-PIs 
+Connolly and Ivezi\'{c} will be responsible for the course ASTR 497, and for mentoring 
+Astronomy students. The Co-PI VanderPlas will be responsible for Python materials, 
+and for maintaining and developing tools available through the {\it astroML} package. 
 
-
-The co-PIs, Connolly, Ivezi\'{c}, and Vanderplas will be grossly irresponsible. 
-
-
-{\bf In summary, the project schedule is:}
-
-{\bf Year 1:}
-Think
-
-{\bf Year 2:}
-Do
-
-{\bf Year 3:}
-Analyze
-
+The work will adhere to this schedule: 
+\bits
+\item {\bf  Year 1:} Design and introduce two new courses, \statcl, \astrocl, to
+the ACMS Program Statistics track. Start the Undergraduate \cdse\ Research Seminar. 
+\item {\bf Year 2:} Complete the redesign of the ACMS Program Statistics track
+by reorganizing the core and electives. Organize a workshop for UW faculty. 
+Continue developing the courses' software and data infrastructure. 
+\item {\bf Year 3:} Incorporate feedback from evaluators and all participants. 
+Continue developing the courses' software and data infrastructure. 
+Organize a workshop for participants from other institutions aiming to 
+emulate the UW program.
+\eits
 
 \subsection{             Results from Prior NSF Support             }
 \label{sec:priorNSF}
@@ -49,26 +59,29 @@ Statistics, Computer Science and the domain sciences on the topic of
 ``Big-Data'', and numerous advances in computational and statistical
 approaches to data intensive astrophysics.
 
-PI \meila\ is XXX. Her project ``Intransitive Game-Thoretic''
-classifiers ( ) analyzed the preference and ranked data in the context
-of intransitivity. This three year project produced: \mmp{fill}
-papers, a jointly taught Statistics/EE graduate course, 2 summer
-reading groups at UW and one at MIT, involved 5 statistics students, 1
-CS student, 1 Applied Math student and 1 undergraduate, a code package
-available at {www.stat.washington.edu/mmp/intransitive}. The grant
-``Doctoral Student Forum and Student Travel at the 2011 SIAM Data
-Mining Conference'' ( ) supported the travel of 14 out of town
-students to participate in the Doctoral Forum (9 out of these being
-statistics students), and an additional 7 students in the
-conference. The Forum activities: panel discussion, poster session,
-and best poster award were a succes. (In particular, several students
-obtained internships, organized SDM workshops in 2013, and improved
-their papers as a result of the Forum). \meila~ is a recipient of the
-grant ``Statistical Modeling the Functional Activity in the Primary
-Motor Cortex'' from the {\em NSF ERC for Sensorymotor and Neural
-  Engineering}, is a two year ongoing project. It has involved so far
-2 statistics graduate students and one undergraduate.
-
+PI \meila's recent project ``Intransitive Game-Thoretic'' classifiers
+(IIS-0535100) analyzed the preference and ranked data in the context
+of intransitivity. This three year project produced\footnote{This
+  counts only the products in which \meila~ was involved directly as
+  co-author or advisor.}: 2 journal papers, 5 refereed conference
+papers, 5 other publications, a code package available at
+{www.stat.washington.edu/mmp/intransitive}, a jointly taught
+Statistics/EE graduate course, a NIPS Workshop (co-organized by
+\meila), 2 summer reading groups at UW and one at MIT. It has involved
+5 statistics students, 1 CS student, 1 Applied Math student and 1
+undergraduate. The grant ``Doctoral Student Forum and Student Travel
+at the 2011 SIAM Data Mining Conference'' (DMS-1103263) supported the
+travel of 14 out of town students to participate in the Doctoral Forum
+(9 out of these being statistics students), and an additional 7
+students in the conference. The Forum activities: panel discussion,
+poster session, and best poster award were a succes. (In particular,
+several students obtained internships, organized SDM workshops in
+2013, and improved their papers as a result of the Forum). \meila~ is
+a recipient of the grant ``Statistical Modeling the Functional
+Activity in the Primary Motor Cortex'' from the {\em NSF ERC for
+  Sensorymotor and Neural Engineering}, is a two year ongoing
+project. It has involved so far 2 statistics graduate students and one
+undergraduate.
 
 Connolly is the Simulation Scientist for the LSST; responsible for the
 modeling and simulations of the scientific performance of the
@@ -91,8 +104,8 @@ computer algorithms to automatically classify astronomical objects
 methods to accelerate the exploration of complex parameter spaces
 \cite{daniel2012}.
 
-The Co-PI Ivezi\'{c} is project scientist for the LSST. He was
-recently PI on four projects supported by NSF that are indirectly
+The Co-PI Ivezi\'{c} is the Project Scientist for the LSST. He was
+recently PI on three projects supported by NSF that are indirectly
 related to the work proposed here (mostly through data mining aspects,
 public release practice for all data products, and through engaging
 large numbers of students in research and publication process).
@@ -124,7 +137,6 @@ Ph.D. thesis, and has engaged four undergraduates in data analysis and
 publications.
 
 
-
 Beyond the statistical and astrophysical aspects of the research
 described above the PIs have demonstrated a commitment for integrating
 research and education (see, for example, the extensive machine
@@ -139,6 +151,7 @@ software \cite{rosenfield2011}.
 All tools, codes and educational material developed through this
 program will be open-source and made available on the web. 
 
+\comment{
 \section{Cemetery}
 
 To develop a software infrastructure for teaching \cdse~ in
@@ -214,11 +227,4 @@ To develop a software infrastructure for teaching \cdse~ in
 - we will create new learning environments and experiences that immerse students in \cdse 
    while energizing and sustaining the professional growth of faculty in \cdse
 }
-
-
-
-
-
-\end{document} 
-
-
+}
