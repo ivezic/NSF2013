@@ -9,10 +9,10 @@ departments of Applied Mathematics, Computer Science and Engineering
 
 The ACMS program is structured into a {\em core} set of courses,
 totaling 43 credits, and a set of options, or {\em tracks}. The tracks
-are either associated with a particular application domain (Biological
-and Life Sciences, Mathematical Economics, Social and Behavioral
-Sciences, Engineering and Physical Sciences) or with a particular area
-of specialization in the mathematical sciences ({\em Discrete Math and
+are either associated with a particular application domain ({\em
+  Biological and Life Sciences, Mathematical Economics, Social and
+  Behavioral Sciences, Engineering and Physical Sciences}) or with a
+particular area in the mathematical sciences ({\em Discrete Math and
   Algorithms, Operations Research, Scientific Computing and Numerical
   Analysis, and \underline{Statistics}}).
 
@@ -89,7 +89,7 @@ There are several motivating factors:
   analysis.
 \item These skills are not limited to using computers and
   programming. The nature of statistical analyses itself is
-  affected \mmp{get some citations} as it has been long
+  affected \cite{friedman:97} as it has been long
   recognized. Computationally heavy statistical methods need to be
   designed. Very large samples will support models of a complexity
   that could not be considered in real-life scenarios a decade or two
@@ -101,9 +101,9 @@ There are several motivating factors:
   almost universal necessity. Devising new methods to evaluate complex
   models in an environment that is not stationary, nor controlled are
   some of the challenges of modern data analysis.
-\item The proposal fits in and leverages other \cdse\ efforts and successes at UW in creating a strong collaborative environment for (the e-science Institute, the IGERT for graduate education in Big Data and the related PhD tracks recently created in CSE and Statistics). The time is ripe to involve undergraduates, and specifically statistics and mathematics majors in this change.
+\item The proposal fits in and leverages other  efforts and successes at UW in creating a strong collaborative environment for \cdse\ (the e-science Institute, the IGERT for graduate education in Big Data and the related PhD tracks recently created in CSE and Statistics). The time is ripe to involve undergraduates, and specifically statistics and mathematics majors in this change.
 \item This proposal is in the spirit of the ACMS original mission,
-  bringing this part up to speed with the demands of the coming decade.
+  bringing this program up to speed with the demands of the coming decade.
 \eit
 
 {\bf Work Plan}
@@ -111,13 +111,13 @@ There are several motivating factors:
 For planning purposes, we divide the proposed project into three stages which
 roughly map to yearly schedule. 
 
-{\bf Stage 1:} Design and introduce two new courses \statcl, \astrocl,
-as {\em electives} in the track.  Start the Undergraduate \cdse~
-Research Seminar. This seminar will differ from the existing ``ACMS''
-Undergraduate Math Science Seminar ({\sc Math 498}), in that the
-speakers will be undergraduates themselves or their mentors, and the
-seminar topics will be their projects (see Section
-\ref{sec:ugrad-seminar} for more details).
+{\bf Stage 1:} Design and introduce two new courses \statcl, \astrocl
+(described in Section \ref{sec:course-descr}) s {\em electives} in the
+track.  Start the Undergraduate \cdse~ Research Seminar. This seminar
+will differ from the existing ``ACMS'' Undergraduate Math Science
+Seminar ({\sc Math 498}), in that the speakers will be undergraduates
+themselves or their mentors, and the seminar topics will be their
+projects (see Section \ref{sec:ugrad-seminar} for more details).
 
 {\bf Stage 2:} Redesign the track: move \statcl, Stochastic Processes {\sc STAT 481, 482} into the core. As the track will no longer be regarded as a second major for science students, we will make room by removing the {\sc PHYS 121-2-3} courses (15 credits) from it.  Reorganizing the electives into two groups: math/stat electives (group I) and computing and science electives (group II). Further reorganization of the core and electives in consultation with Statistics faculty and the other ACMS participating departments and Schools. For example, we will consider adding one or both of {\sc AMATH 482, 483} ``Data analysis'', ``High performance scientific computing''.
 
@@ -128,28 +128,29 @@ Organization of a workshop for UW faculty to share our experiences and teaching 
 In addition to this plan, although we are at the moment not explicitly
 proposing this, we will investigate if the two new courses could be
 made accessible to Mathematics majors as well. Mathematics Professor
-William Stein, creator and leader of the {\tt Sage} project, teaches a
-successful Python programming course in Mathematics, which could serve
-to build a pathway towards one or both of the two new courses, if a
-way to satisfy the Statistics prerequisites is also found.
+William Stein, creator and leader of the {\tt Sage}
+project\footnote{{\tt www.sagemath.org/}}, teaches a successful Python
+programming course in Mathematics, which could serve to build a
+pathway towards one or both of the two new courses, if a way to
+satisfy the Statistics prerequisites is also found.
 
 
 {\bf Why this particular approach?} Currently, computer education is
-assured primarily through two core courses, {\sc CSE 142, 143}
-\cite{cse142}. These set the foundations in the understanding of
+assured primarily through two core courses, {\sc Cse 142, 143}
+\cite{cse142,Reges:java}. These set the foundations in the understanding of
 computer programming, but they are of a general nature, and are mainly
 focused towards preparing future programmers  (these courses are the
 same courses that the approximately 500 CSE majors take). Thus, there
 is no room for data analysis applications in these courses.  There is
-also a programming in R course ({\sc STAT 302}, 2 credits) but it is 
+also a programming in R course ({\sc Stat 302}, 2 credits) but it is 
 offered quite irregularly.
 
-However, for reasons we will expound later (Section \ref{sec:Python}), we
+For reasons we will expound in Section \ref{sec:Python}, we
 consider that Python is the more appropriate computer language for our
 goals. Thus, we will both introduce Python and will use it to teach
 statistical methodology.  As Python will be taught as a second
 programming language, and as it is similar enough to Java (taught in
-CSE 142), we expect the students to assimilate it quickly under our
+{\sc Cse 142}), we expect the students to assimilate it quickly under our
 guidance (there are also numerous publicly available tutorials).
 In Spring 2013, a pilot course was taught (by H. Koepke,
 Statistics) that introduced Python and taught statistical modeling
@@ -160,14 +161,20 @@ in our approach.
 
 The need for a dedicated scientific computing course was long
 recognized, hence the Scientific Computing track and courses developed
-by AMATH {\sc 481} (project based, in Matlab) {\sc 482}, and {\sc 483}. 
+by {Amath \sc 481} (project based, in Matlab) {\sc 482}, and {\sc 483}. 
 Our proposed courses are not replicating, but adding a new dimension to
 the existing AMATH courses. The latter focus on the ``signal
-processing'' aspects of data analysis (e.g filtering, {\sc AMATH
+processing'' aspects of data analysis (e.g filtering, {\sc Amath
   482}) and on the ``hardware, software, and programming for
-large-scale scientific computing'' ({\sc AMATH 483}), while our
+large-scale scientific computing'' ({\sc Amath 483}), while our
 courses focus on the statistical modeling and statistical decision
 making aspects.
+
+Third, we chose to separate the education/teaching component and the
+research component into courses and research seminar, respectively. We
+consider this the better option, since the courses will have to teach
+both programming and methodology. Pursuing too many goals in the
+course of a single class would have been detrimental to solid learning.
  
 \comment{
 
@@ -238,10 +245,10 @@ assign for this course. We will rely partly on \meila's previously
 developed course notes for {\it ``Probability and Statistics for
   Computer Science''}, a computationally minded introductory course,
 partly on new course notes to be developed by \meila\ specifically for
-this more advanced course, and partly on the textbook of \astrocl, 
-which will provide among others the Python exercises. We are also
-considering a new machine learning book written for undergraduate
-students \cite{x}. 
+this more advanced course, and partly on the textbook of \astrocl,
+which will provide among others the Python exercises. %We are also
+%considering material from the new machine learning book written for
+%undergraduate students \cite{Witten:13}.
 
 \comment{
 \item{Motivation for \astrocl} \mmp{shorter,more to the point of grant}
