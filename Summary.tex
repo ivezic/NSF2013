@@ -1,200 +1,187 @@
-%%% THIS FILE IS PLAIN TEX, run
-%%  > tex Summary; dvips -Ppdf -o Summary.ps Summary.dvi; ps2pdf14 Summary.ps Summary.pdf
+\documentclass[nofootbib,floatfix,11pt]{article}
+\usepackage[square]{natbib}
+\usepackage[paperwidth=8.5in,paperheight=11in,centering,margin=1in]{geometry}
+\usepackage{paralist}
+\usepackage{parskip}
 
-\voffset +0.4 true in
-\hsize 6.5 true in
-\vsize 9.0 true in
-%\font\typo=cmr11
-\font\typo=cmr12
-\font\top=cmr17
-\font\addr=cmss12
-\font\it=cmti12
-\font\bf=cmbx12
-\baselineskip 13 true pt
-\parindent 0.15 true in
-\parskip 1 pt
-\font\bigbo=cmbx12 scaled\magstep1
-\def\bpar {\noindent\hangafter=1\hangindent=0.5 true in}
-\def\bbpar {\hangafter=1\hangindent=1.2 in}
-\def\msrule{\medskip\hrule\hrule\smallskip}
-\typo
+\setlength{\parindent}{0pt}
+
+\usepackage[compact,medium]{titlesec}
+\titlespacing{\part}{0pt}{*0}{2ex}
+\titlespacing{\section}{0pt}{2pt}{1ex}
+\titlespacing{\subsection}{0pt}{2pt}{1ex}
+\titlespacing{\subsubsection}{0pt}{*0}{1ex}
+\titleformat*{\section}{\large \bf}
+\titleformat*{\subsection}{\bf}
+\titleformat*{\subsubsection}{\itshape}
+
+% suck up extra white space
+\setlength{\parskip}{3pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+
+\renewcommand{\thefootnote}{\alph{footnote}}
+\setlength{\belowcaptionskip}{-10pt}
+
+\usepackage{amsmath}
+\usepackage{amsbsy}
+
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{graphicx}
+
+%commented out the line below to get rid of citations that run into margins
+%\usepackage{multicol}
+
+%\usepackage{etoolbox}
+
+%\renewcommand{\baselinestretch}{0.971}
+
+\usepackage{hyperref}
+
+
+\title{Statistical Explorations of Data in the {ACMS} {Program} at the
+  {University} of {Washington}}
+\author{PI: Marina \meila, Co-PIs: Andrew Connolly, \v{Z}eljko Ivezi\'{c}, Jacob Vanderplas}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{document}
+\font\math = cmmi12
+\newcommand\x         {\hbox{$\times$}}
+\hyphenation{para-met-ri-zed Qua-sars cross-vali-da-tion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands added by MMP 
+\newenvironment{itemize*}{
+\begin{itemize}
+\setlength{\parskip}{0em}
+\setlength{\topskip}{0em}
+}
+{\end{itemize}}
+
+\newenvironment{enumerate*}{
+\begin{enumerate}
+\setlength{\parskip}{0em}
+\setlength{\topskip}{0em}
+}
+{\end{enumerate}}
+
+\newcommand{\comment}[1]{}
+\newcommand{\mmp}[1]{\textcolor{red}{#1}}
+
+\newcommand{\meila}{Meil\u{a}}
+\newcommand{\cdse}{CDS\&E}
+
+\newcommand{\astroml}{{\em AstroML}}
+\newcommand{\astrocl}{{\sc ASTR 497}}
+\newcommand{\statcl}{{\sc STAT 391}}
+
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+\newcommand{\bits}{\begin{itemize*}}
+\newcommand{\eits}{\end{itemize*}}
+\newcommand{\benum}{\begin{enumerate}}
+\newcommand{\eenum}{\end{enumerate}}
+\newcommand{\benums}{\begin{enumerate*}}
+\newcommand{\eenums}{\end{enumerate*}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-\vskip -1.6in
-\centerline{\bigbo A.\ \     PROJECT SUMMARY}
-\medskip
+\begin{document}
 
-%\leftline{\bf              A.1 Science Overview                     }
+%\vskip -1.6in
+%\centerline{\Large     PROJECT SUMMARY}
+%\medskip
 
+Most disciplines, from the physical to the life sciences, have entered
+an era, where discovery is no longer limited by the collection and
+processing of data, but by the management and the statistical analysis
+of this information. Novel developments in instrumentation have lead
+to a tremendous increase in the magnitude of these data (leading to a
+focus on \emph{Big Data}).  While significant steps in the development
+of the statistical methodologies for processing Big Data have been
+made, these ``hammers'' are rarely tied to fundamental questions that
+science and society wish to address. There remains a disconnect
+between methodological approaches to Big Data and the science that
+they can enable.
+%The goal of this proposal is to address this disconnect
+%through the development of a educational program for big data in
+%statistics and mathematics.
 
-The proposed program will deliver ...
+\noindent{\bf Education and Training:}
+The goal of this EXTREEMS-QED program is to create a new breed of
+statistician: proficient in and able to understand the tools and
+methodologies for data-intensive statistics yet able to apply these
+tools and models to some of the biggest scientific questions of the
+coming decades.  Most importantly, this program will have an immutable
+focus on multidisciplinary training, thus blurring the distinctions
+between students of mathematics, statistics, and the domain sciences.
 
-As an integral
-part of this project, we will engage a large number of undergraduate students in 
-publication-quality hands-on research involving state-of-the art data mining and machine 
-learning techniques.
+Our transformative path to address the challenges associated with
+these goals comprises: the development of a Big Data track as part of
+the ACMS (Applied and Computational Math Sciences) Program at the
+University of Washington, tying the statistical methodologies to
+real-world science challenges (initially Astrophysics and then a
+broader range of domain sciences), and leveraging partnerships with
+the eScience Institute, the UW IGERT graduate program in Big Data, and
+the dual track PhD program in Computer Science and Statistics. 
 
+The Big Data track will comprise two elective courses an Undergraduate
+\cdse~ Research Seminar. The speakers in this seminar series will be
+undergraduates themselves or their mentors, and the seminar topics
+will be their research projects. With continuous evaluation of the
+impact of these courses we expect to redesign the track to incorporate
+two groups: math/stat electives (group I) and computing and science
+electives (group II) with focuses on the theory or methodology and
+application respectively.
 
-\vskip 4pt
-\leftline{\bf   A.1\ \ Intellectual merit of the proposed activity     }
+%This educational program fits naturally with a number of initiatives
+%to integrate the mathematical and physical sciences around the
+%concepts of ``Big Data'', that are ongoing at the University of
+%Washington. Prime amongst these endeavors are the creation of an
+%eScience Institute, and a new NSF-sponsored IGERT graduate student
+%program in ``Big Data''. We will leverage these programs throughout
+%this initiative by enhancing the curriculum and research experiences
+%of the mathematical and statistical students in data-intensive
+%science, by providing the resources to enable hands-on research
+%experiences, and by engaging the IGERT graduate students in working
+%with the undergraduate students.
 
-The deliverables of this proposal will have an impact on the community that is 
-much broader than its immediate goals. We will ...
+\noindent{\bf Research:}
+Our primary research goal is to introduce and prepare students to
+perform research in computationally intense statistical modeling and
+in the statistical analysis of large scientific data. Based on the
+organizational structure of the successful University of Washington's
+Pre-Map Program (``Pre-Major in Astronomy'') we will develop small
+teams including graduate and undergraduate students (with the
+recruitment process targeted at minorities and underrepresented
+groups).  The student teams will be mentored by the four PI's and will
+work on real research projects including: non-linear dimension
+reduction in large scientific data, and non-parametric clustering and
+density estimation. To enable students to focus on the statistical
+application as opposed to the software development, initial research
+projects will be based on existing scalable Python applications,
+developed by the coPIs, that are suitable for large data sets.
 
-\vskip 3pt
-\leftline{\bf   A.2\ \  Broader impacts of the proposed activity        }
+\noindent{\bf Faculty Professional
+Development/Outreach:}
+The development of the ACMS Big Data track will in of itself have a
+broad impact on the University and on the teaching and impact of
+statistics for data-intensive sciences. It will enable opportunities
+for undergraduate research and hands-on experiences centered on \cdse\
+and will result in significant changes to the undergraduate
+mathematics and statistics curriculum at the University of Washington
+(with broad institutional support and buy-in from two major
+departments; Statistics and Astronomy). Additional outreach and
+development activities include a workshop centered on professional
+development activities for faculty from other institutions wishing to
+emulate the proposed program. All course material, software, and
+evaluations will be made available as part of this project. 
 
-The educational component of this project will contribute to the training of next generation 
-of ...
-
-\vfil\eject
-\end
-%\end{document}
-
-II populations to a distance of 30 kpc, as well as their light-curve based
-metallicity distribution measurements. We will perform follow up time-resolved photometric 
-observations of a subset of these stars with a dual purpose: to provide more 
-accurate characterization of selection efficiency and metalicity accuracy, and 
-to engage a large number of undergraduate students in publication-quality 
-hands-on research. With several hundred observations per source, for about 
-20 million sources, the LINEAR photometric database is the best
-such resource currently available, and we propose to publicly release it, 
-toghether with appropriate querying tools. 
-
-
-
-\section{{\bf  INTRODUCTION}}
-
-This three-year project aims to deliver improved observational constraints 
-and model-based understanding for the formation and evolution of the 
-Milky Way's disk. The project will capitalize on {\bf i)} the unprecedented data 
-set obtained by WISE (Wide-field Infrared Space Explorer) space mission, and 
-{\bf ii)} results produced during the PI's NSF-supported projects ``Towards a 
-Panoramic 7-D Map of the Milky Way'' (completed in 2011) and ``Mapping the 
-Milky Way: Data-miners, Modelers, Observers, Unite!'' (in its final third year). 
-The work proposed here has two broad goals:
-
-{\bf 1.} We will utilize a major new database of infrared observations obtained by
-WISE, as well as various extant training samples, to develop robust and efficient methods for 
-selecting Asymptotic Giant Branch stars (AGB; discussed in more detail in section 
-\ref{sec:AGBintro}) using WISE photometry. AGB stars
-are sufficiently numerous in the Galaxy (of the order 10$^5$) to enable detailed
-studies of its structure. They can be detected by WISE to distances exceeding 100 kpc,
-with good photometric distance estimates.
-{\it Most importantly}, WISE can detect them throughout the
-disk with only a minor influence of the interstellar dust extinction (which is
-more than ten times smaller in WISE bands than in the visual $V$ band). 
-Using stellar population models developed to interpret SDSS (Sloan Digital Sky Survey)
-and 2MASS (Two Micron All Sky Survey) data, 
-and circumstellar dust emission models for AGB stars, we will quantify the selection
-efficiency and completeness functions of the resulting selection methods. This project 
-goal will serve a dual purpose: it will enable the use of WISE-selected samples 
-of AGB stars for Galactic structure studies and 
-it will engage a large number of undergraduate students in publication-quality 
-hands-on research involving state-of-the art data mining and machine learning techniques. 
-% (of the order $(2-3)\times10^5$ stars),
-
-{\bf 2.} We will synthesize these new results based on WISE AGB stars, and recent 
-SDSS- and 2MASS-based results on mapping of the spatial, kinematic and metallicity 
-distributions of the Milky Way main sequence stars, into a self-consistent observational
-picture. The two most important aspects of inferences based on AGB stars are
-the essentially full coverage of the Galactic disk and the ability to bracket particular 
-epochs in the disk history due to fairly narrow age distributions of appropriately chosen
-AGB subsamples (compared to main sequence stars). We will combine these observational 
-results with fast advances in cosmologically motivated N body and other models for disk 
-formation and evolution to critically compare data and 
-theory by asking questions such as: Do model galaxies look similar to the observed Milky Way? 
-Can state-of-the-art  models produce stellar spatial, kinematic, metallicity and age 
-distributions in agreement with recent SDSS, 2MASS, WISE and other data sets?
-Can popular thick disk formation scenarios, such as radial migration and gas-rich mergers, 
-explain anticipated differences in the distributions of main sequence and AGB stars? 
-Does the behavior of AGB stars support a picture, motivated by SDSS data, where
-chemical composition parameterized by measured metallicity ($[Fe/H]$) and 
-$\alpha$-element abundance ($[\alpha/Fe]$) is a good age tracer? If so, can we use 
-models to learn about quantities that are not readily observed, such as detailed
-age distributions and Galactic gravitational potential? Can we use the same models to 
-decipher complex correlations among various observables uncovered in modern 
-Milky Way surveys? 
-
-
-
-These deliverables will have an impact on the community that is much broader 
-than the focus of this proposal. The expected two hundred
-thousand candidate AGB stars present in WISE dataset will enhance our
-understanding of the stellar mass-loss process and will form the basis for selecting
-well-controlled subsamples for followup with other facilities (e.g. ALMA, or
-photometric observations to characterize light curves, which is a popular 
-endeavor among amateur astronomers). The resulting AGB sample will also 
-enable characterization of the distribution of the ISM dust to distances 
-significantly exceeding the current limits. The circumstellar dust opacity 
-models will be improved at WISE wavelengths.  The improved understanding 
-of the  stellar component in WISE database will help with the analysis of extragalactic 
-populations. Last but not least, the educational component of this project will
-contribute to the training of next generation of astronomers to handle massive 
-data sets and utilize modern data mining methods. 
-
-
-
-
-
-The research proposed in this work is heavily based on a new reality
-in observational astronomy: the availability of science-ready large
-complex astronomical databases. Such readily available resources are
-having a strong impact on areas ranging from high school education to graduate
-training of future astronomers. Data mining of these new datasets is particularly
-powerful when combined with follow up observations and analysis of 
-sophisticated numerical models. At the same time, there is strong evidence that 
-research experiences for undergraduates have exceedingly strong impact on 
-students' decision to stay in the sciences (Rothman \& Narum 1999). 
-Taken together, these facts motivate our proposal to combine our
-scientific goals with an effort to provide meaningful research experiences
-for undergraduate students at the University of Washington. The essential
-features of the proposed program have already been extensively used and
-tested in practice as part of other PI's programs supported by NSF (listed
-in section \ref{sec:priorNSF}). 
-
-The main features of our program are: 
-
-{\bf Expose students to data-mining in astronomy:} 
-we will use SDSS SkyServer exercises and the WISE database to 
-train students in statistical analysis of large datasets. For example, 
-students will be required to download WISE data,  correlate them with 
-SDSS and 2MASS databases, and construct and interpret appropriate
-color-magnitude and color-color diagrams. Students will use an
-extensive set of publicly available modern python tools developed in 
-support of a textbook on data mining and machine learning in astronomy
-coauthored by the PI (Princeton University Press, 2013). 
-
-{\bf Educate students about state-of-the-art numerical models
-of the Universe:}  we will place their research experience in a broader
-context by discussing the predictions of Galfast and N-body galaxy 
-models, and how new observations could lead to support for, or rejection
-of, such models. 
-
-{\bf Expand students' experience with professional astronomy:} all students 
-will participate in the full publication process, starting with discussions of rough 
-ideas, early data reduction and paper drafts, all the way to writing the last reply 
-to the referee. 
-
-Similar programs undertaken as parts of the PI's earlier projects have been
-very successful; over the last five years, over twenty undergraduate students
-have participated in the research and publication process (including authorship)
-under PI's guidance, and about twice as many contributed to smaller
-research units. 
-
-
-
-
-
-1008784	Standard Grant	Mapping the Milky Way: Data-miners, Modelers, Observers, Unite!	10/01/2010	09/30/2013
-                               
-This award with this amendment totals $439,447 and expires September 30, 2013.  
-
-
-
-                                
-                                 
-
+\end{document}
