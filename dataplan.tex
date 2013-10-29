@@ -1,0 +1,126 @@
+\documentclass[nofootbib,floatfix,11pt]{article}
+\usepackage[square]{natbib}
+\usepackage[paperwidth=8.5in,paperheight=11in,centering,margin=1in]{geometry}
+\usepackage{paralist}
+\usepackage{parskip}
+
+\setlength{\parindent}{3ex}
+
+\usepackage[compact,medium]{titlesec}
+\titlespacing{\part}{0pt}{*0}{2ex}
+\titlespacing{\section}{0pt}{2pt}{1ex}
+\titlespacing{\subsection}{0pt}{2pt}{1ex}
+\titlespacing{\subsubsection}{0pt}{*0}{1ex}
+\titleformat*{\section}{\large \bf}
+\titleformat*{\subsection}{\bf}
+\titleformat*{\subsubsection}{\itshape}
+
+% suck up extra white space
+\setlength{\parskip}{3pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+
+\renewcommand{\thefootnote}{\alph{footnote}}
+\setlength{\belowcaptionskip}{-10pt}
+
+\usepackage{amsmath}
+\usepackage{amsbsy}
+
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{graphicx}
+
+%commented out the line below to get rid of citations that run into margins
+%\usepackage{multicol}
+
+%\usepackage{etoolbox}
+
+%\renewcommand{\baselinestretch}{0.971}
+
+\usepackage{hyperref}
+
+
+\title{Statistical Explorations of Data in the {ACMS} {Program} at the {University} of {Washington}}
+\author{PI: Marina \meila, Co-PIs: Andrew Connolly, \v{Z}eljko Ivezi\'{c}, Jacob Vanderplas}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\font\math = cmmi12
+\newcommand\x         {\hbox{$\times$}}
+\hyphenation{para-met-ri-zed Qua-sars cross-vali-da-tion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands added by MMP 
+\newenvironment{itemize*}{
+\begin{itemize}
+\setlength{\parskip}{0em}
+\setlength{\topskip}{0em}
+}
+{\end{itemize}}
+
+\newenvironment{enumerate*}{
+\begin{enumerate}
+\setlength{\parskip}{0em}
+\setlength{\topskip}{0em}
+}
+{\end{enumerate}}
+
+\newcommand{\comment}[1]{}
+\newcommand{\mmp}[1]{\textcolor{red}{#1}}
+
+\newcommand{\meila}{Meil\u{a}}
+\newcommand{\cdse}{CDS\&E}
+
+\newcommand{\astroml}{{\tt AstroML}}
+\newcommand{\astrocl}{{\sc Astr 497}}
+\newcommand{\statcl}{{\sc Stat 391}}
+
+\newcommand{\bit}{\begin{itemize}}
+\newcommand{\eit}{\end{itemize}}
+\newcommand{\bits}{\begin{itemize*}}
+\newcommand{\eits}{\end{itemize*}}
+\newcommand{\benum}{\begin{enumerate}}
+\newcommand{\eenum}{\end{enumerate}}
+\newcommand{\benums}{\begin{enumerate*}}
+\newcommand{\eenums}{\end{enumerate*}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\centerline{\large \bf Data Management Plan}
+
+There will be two types of data that we will manage and make publicly avaialable.
+
+First, we will make extensive use of catalogs delivered by modern astronomical
+surveys (e.g. SDSS, but also many others). We will publish all SQL queries used to 
+download data from the various databases together with other public project documentation.
+All the processing of raw downloaded data will be performed with a suite of python
+tools. Many of these tools (mostly data mining and machine learning applications,
+but also various visualization algorithms) were already placed in the public domain 
+(available from http://astroml.github.com/); those that will be developed for
+this project will also be made freely available via github. 
+
+In principle, all data products will be exactly reproducible by anyone, given that all
+our SQL queries and post-processing software will be published. Nevertheless, it is 
+often beneficial to others to also have access to the actual final data products. Hence,
+all catalogs and other metadata resulting from this project will be made accessible via 
+the Co-PI Ivezi\'{c}'s ``Data Depot'' site (available from the PI's home webpage under 
+pull-down menu ``Research -- Data Depot''),  which already includes a large collection 
+of data products from prior projects. The preferred data formats include both FITS binary 
+tables and plain ascii text files (when practical). 
+
+In addition, we expect to collect much smaller but valuable dataset based on evaluation 
+services for this project provided by the University of Washington Office of Educational 
+Assessment (OEA). We anticipate that these data will be used by others who will emulate
+our program and we will make them available, too.
+
+\end{document} 
+
+
