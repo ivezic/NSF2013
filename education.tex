@@ -87,9 +87,9 @@ There are several motivating factors:
   will reach similar enrollment numbers. Note that at the current
   enrollment in the other tracks, the total ACMS enrollment will be
   near 200.
-\item There is a disconnect between the classical statistics
-  curriculum and the computational needs of the next generation of Big
-  Data statisticians in both academia and industry.
+%\item There is a disconnect between the classical statistics
+%  curriculum and the computational needs of the next generation of Big
+%  Data statisticians in both academia and industry.
 \item The nature of statistical analyses is itself affected by the
   rapid increase in data volumes \cite{friedman:97}; as has 
   long been recognized. Computationally intensive statistical methods need to
@@ -110,7 +110,7 @@ There are several motivating factors:
   %almost universal necessity. Devising new methods to evaluate complex
   %models in an environment that is not stationary, nor controlled are
   %some of the challenges of modern data analysis.
-\item The proposal fits in and leverages other \cdse\ efforts and successes at UW for creating a strong collaborative environment (the eScience Institute, the IGERT for graduate education in Big Data, and the related PhD tracks recently created in CSE and Statistics). The time is ripe to involve undergraduates, and specifically statistics and mathematics majors in this change.
+\item The proposal leverages other \cdse\ efforts and successes at UW for creating a strong collaborative environment (the eScience Institute, the IGERT for graduate education in Big Data, and the related PhD tracks recently created in CSE and Statistics). The time is ripe to involve undergraduates, and specifically statistics and mathematics majors in this change.
 %\item This proposal is in the spirit of the ACMS original mission,
 %  bringing this program up to speed with the demands of the coming decade.
 \eit
@@ -118,8 +118,7 @@ There are several motivating factors:
 %\vskip 0.1in
 \subsection{Work Plan}
 
-For planning purposes, we divide the proposed project into three stages which
-roughly map to a yearly schedule. 
+\noindent We divide the proposed project into three stages; roughly map to a yearly schedule.
 
 \noindent {\bf Stage 1:} Design and introduce two new courses,
 \statcl, \astrocl,
@@ -143,18 +142,18 @@ adding one or both of {\sc AMATH 482, 483} ``Data analysis'', and
 ``High performance scientific computing''.
 %consultation with Statistics faculty and the other ACMS participating
 %departments and Schools. 
-Organization of workshop for UW faculty to share our experiences and
-teaching infrastructure and to broaden the science components of this program.
+Organization of a workshop for UW faculty to share our experiences and
+teaching infrastructure
 
 \noindent {\bf Stage 3:} 
-%Incorporate feedback from evaluators and all participants. Continue developing the courses' %software and data infrastructure. 
-Investigate if the two new courses could be
-made accessible to Mathematics majors as well. Mathematics Professor
-William Stein, creator and leader of the {\tt Sage}
-project\footnote{{\tt www.sagemath.org/}}, teaches a successful Python
-programming course in Mathematics, which could serve to build a
-pathway towards one or both of the two new courses, if a way to
-satisfy the Statistics prerequisites is also found.
+%Incorporate feedback from evaluators and all participants. Continue
+%developing the courses' %software and data infrastructure. 
+Broaden the the science components of this program beyond Astronomy.
+Evaluate the integration of the courses into the Mathematics majors
+curriculum. Mathematics Professor William Stein, creator and leader of
+the {\tt Sage} project\footnote{{\tt www.sagemath.org/}}, teaches a
+successful Python programming course in Mathematics, which could serve
+as a pathway towards one or both of the two new courses.
 
 
 {\bf Why this particular approach?} Currently, computer education is
@@ -224,13 +223,16 @@ How does UW support this plan:
 \label{sec:course-descr}
 
 \bits
-\item \statcl 
-``Computational Statistical Modeling and Machine Learning'' (4 credits)
-\item \astrocl ``Data Intensive Astronomy'' (3 credits)
+\item \statcl~``Computational Statistical Modeling and Machine Learning'' (4 credits)
+\item \astrocl~``Statistics, Data Mining, and Machine Learning in Astronomy'' (3 credits)
 \eits
+
 The aims of these sources are to (1) provide a strong statistical
-foundation in data analysis (2) give students a hands-on experience, through programming, and performing real data analyses on a computer, with the computational aspects of 
-statistical modeling in general, and (3)  introduce them to the  machine learning methodology in particular, with specific attention to the issues of big data.
+foundation in data analysis (2) give students hands-on experience,
+through programming, and performing real data analyses with the
+computational aspects of statistical modeling, and (3) introduce them
+to the machine learning methodology in particular, with specific
+attention to the issues of big data.
 
 The material covered will be partly overlapping with other courses
 (e.g. regression, probability models for discrete data) and partly new
@@ -341,7 +343,7 @@ extensive prior knowledge in statistics will be required.
 
 
 \vskip 0.2in
-\item \underline{\astrocl~ {\bf Draft Syllabus}} XXX NEEDS TITLE \\
+\item \underline{\astrocl~``Statistics, Data Mining, and Machine Learning in Astronomy'' {\bf Draft Syllabus}} \\
 \bit
 \item computational challenges in data-intensive astronomy and astrophysics 
 (data types and data management systems, types of computational problems and 
@@ -396,27 +398,27 @@ and widely used toolkits (e.g. PyMC for Markov Chain Monte Carlo
 methods, and HealPy for spherical coordinates and spherical harmonic
 transformations).
 
-As an example of the methods and exercises available in {\it astroML}, we
-single out methods for reducing data dimensionality. Many astronomical
-analyses must address the question of the complexity as well as size
-of the data set. Dimensionality reduction methods address the
+As an example of the methods and exercises available in {\it astroML},
+we single out methods for reducing data dimensionality. Many
+astronomical analyses must address the question of the complexity as
+well as size of the data set. Dimensionality reduction addresses the
 complexity issue by finding the directions within a multivariate data
 set that contain most of the information. Classical approaches for
 identifying the principal dimensions include principal component
 analysis (PCA), independent component analysis (ICA), and non-negative
 matrix factorization (NMF). These methods are implemented in {\it
-  astroML}, with a well-documented user-friendly interface
-(see Figure~\ref{Fig:astroML}). Furthermore, {\it astroML} 
-includes easy-to-use code to automatically access and download spectra
+  astroML}, with a well-documented user-friendly interface (see
+Figure~\ref{Fig:astroML}). Furthermore, {\it astroML} includes
+easy-to-use code to automatically access and download spectra
 collected by the Sloan Digital Sky Survey (currently the ``gold
 standard'' for modern astronomical surveys and big data sets; see
 sdss.org).  Through this, an undergraduate student will not only be
-exposed to modern statistical methods and a cutting-edge astronomical
-data set, but will be empowered to actually apply these methods to a
-real complex and massive data set.  The result of this exercise is
-shown in Figure~\ref{Fig:astroML2}.  With such a positive experience,
-it is likely that students would be able to incorporate the methods
-and tools taught in this class into other data-intensive domain sciences.
+exposed to modern statistical methods and cutting-edge astronomical
+data sets, but will be empowered to actually apply these methods to
+real and complex data set.  The result of this exercise is shown in
+Figure~\ref{Fig:astroML2}.  With such a positive experience, it is
+likely that students would be able to incorporate the methods and
+tools taught in this class into other data-intensive sciences.
 
 \begin{figure*}[!t]
 \vskip -1.9in
