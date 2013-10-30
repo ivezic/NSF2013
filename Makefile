@@ -1,5 +1,5 @@
 REPORT=proposal
-LATEX=latex
+LATEX=pdflatex
 DVIPS=dvips
 PS2PDF=ps2pdf
 ACROREAD=open
@@ -12,10 +12,11 @@ all: $(REPORT).pdf
 
 $(REPORT).pdf: $(SRCS)
 	$(LATEX) $(REPORT)
-	$(DVIPS) $(REPORT).dvi -o $(REPORT).ps
-	$(PS2PDF) $(REPORT).ps $(REPORT).pdf
-	$(ACROREAD) $(REPORT).pdf &
-	$(RMTEX)
+	$(BIBTEX) $(REPORT)
+	$(LATEX) $(REPORT)
+	$(LATEX) $(REPORT)
 
 pdf: $(REPORT).pdf
 
+clean:
+	$(RMTEX)
